@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".SearchActivity"
+    android:id="@+id/RelativeLayout"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:keepScreenOn="false"
+    android:nestedScrollingEnabled="false">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/background"
+        android:src="@mipmap/background"
+        android:focusable="true"
+        android:baselineAlignBottom="true"
+        android:cropToPadding="false"
+        android:longClickable="false"
+        android:nestedScrollingEnabled="false"
+        android:adjustViewBounds="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:scaleType="fitXY"
+        android:layout_alignTop="@+id/headerView"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@mipmap/uudanmarklogo"
+        android:layout_below="@+id/headerView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Søg"
+        android:id="@+id/searchButton"
+        android:layout_below="@+id/searchBox"
+        android:layout_alignRight="@+id/searchBox"
+        android:layout_alignEnd="@+id/searchBox"
+        android:layout_marginTop="18dp"
+        android:autoText="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/searchBox"
+        android:inputType="text"
+        android:cursorVisible="false"
+        android:contentDescription="Indhold"
+        android:shadowRadius="@integer/abc_config_activityShortDur"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/showText"
+        android:layout_alignStart="@+id/showText"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/showText"
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="43dp"
+        android:layout_below="@+id/searchButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="43dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/headerView"
+        android:background="#336699"
+        android:singleLine="false"
+
+         />
+
+
+
+</RelativeLayout>
